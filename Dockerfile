@@ -22,7 +22,10 @@ RUN apt-get update && apt-get upgrade -y \
         libxext6 \
         libxrender-dev \
         libgomp1 \
-        libgthread-2.0-0 \
+        libgtk-3-0 \
+        libavcodec58 \
+        libavformat58 \
+        libswscale5 \
     && locale-gen en_US.UTF-8 \
     && update-locale LANG=en_US.UTF-8 \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
